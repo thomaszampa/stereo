@@ -1,8 +1,13 @@
 <template>
-  <div id="player">
-    <div class="title-top">
-      STEREO
-      <span class="title-bot">STEREO</span>
+  <div id="title">
+    <div class="stereo-container">
+      <h1 class="stereo-bot">
+        STEREO
+        <span class="stereo-top">STEREO</span>
+      </h1>
+    </div>
+    <div class="by-container">
+      <div class="by"></div>
     </div>
   </div>
 </template>
@@ -39,16 +44,23 @@ header {
 }
 
 body {
-  font-family: BigJohn;
+  font-family: BigJohnNorm;
   font-style: normal;
   font-weight: normal;
   background: $dark;
+
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
-.title-top {
+.stereo-container {
+  margin: auto;
+}
+
+.stereo-bot {
   font-family: BigJohnBold;
   font-weight: bold;
-  font-size: 12vw;
+  font-size: 15vw;
   letter-spacing: -0.05em;
   color: $yellow;
 
@@ -59,15 +71,15 @@ body {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   &:hover {
-    letter-spacing: 0.73em;
-    left: 2%;
+    letter-spacing: 3vw;
+    left: 2.75%;
   }
 }
 
-.title-bot {
+.stereo-top {
   font-family: BigJohnBold;
   font-weight: bold;
-  font-size: 12vw;
+  font-size: 15vw;
   letter-spacing: -0.05em;
   color: $light;
 
@@ -78,9 +90,19 @@ body {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   &:hover {
-    letter-spacing: 0.73em;
+    letter-spacing: 3vw;
     left: 1%;
   }
+}
+
+.by {
+  font-family: BigJohnNorm;
+  font-weight: normal;
+  font-size: 15vw;
+  letter-spacing: -0.05em;
+  color: $light;
+
+  margin: auto;
 }
 
 footer {
