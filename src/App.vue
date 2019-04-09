@@ -1,10 +1,8 @@
 <template>
   <div id="player">
-    <div class="title-container">
-      <h1 class="title-top">
-        STEREO
-        <span class="title-bot">STEREO</span>
-      </h1>
+    <div class="title-top">
+      STEREO
+      <span class="title-bot">STEREO</span>
     </div>
   </div>
 </template>
@@ -47,26 +45,22 @@ body {
   background: $dark;
 }
 
-.title-container {
-  width: 100%;
-  position: relative;
-}
-
 .title-top {
   font-family: BigJohnBold;
   font-weight: bold;
   font-size: 12vw;
-  letter-spacing: -0.07em;
+  letter-spacing: -0.05em;
   color: $yellow;
 
   margin: auto;
-  left: 0;
   position: absolute;
+  left: 3%;
 
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   &:hover {
-    letter-spacing: 0.2em;
+    letter-spacing: 0.73em;
+    left: 2%;
   }
 }
 
@@ -74,18 +68,18 @@ body {
   font-family: BigJohnBold;
   font-weight: bold;
   font-size: 12vw;
-  letter-spacing: -0.07em;
+  letter-spacing: -0.05em;
   color: $light;
 
   margin: auto;
-  left: 0vw;
   position: absolute;
+  left: 0;
 
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   &:hover {
-    letter-spacing: 0.2em;
-    left: 0.5vw;
+    letter-spacing: 0.73em;
+    left: 1%;
   }
 }
 
