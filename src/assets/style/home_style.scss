@@ -1,0 +1,125 @@
+$dark: #070707;
+$blue: #061d33;
+$yellow: #e8c23a;
+$beige: #f2edc9;
+$light: #fffdf2;
+
+@font-face {
+  font-family: BigJohnNorm;
+  font-style: normal;
+  font-weight: normal;
+  src: url(../fonts/BigJohnPRO-Regular.otf) format("opentype");
+}
+
+@font-face {
+  font-family: BigJohnBold;
+  font-style: bold;
+  font-weight: bold;
+  src: url(../fonts/BigJohnPRO-Bold.otf) format("opentype");
+}
+
+@font-face {
+  font-family: BigJohnLight;
+  font-style: normal;
+  font-weight: light;
+  src: url(../fonts/BigJohnPRO-Light.otf) format("opentype");
+}
+
+header {
+}
+
+body {
+  font-family: BigJohnNorm;
+  font-style: normal;
+  font-weight: normal;
+  background: $dark;
+
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.stereo-bot {
+  font-family: BigJohnBold;
+  font-weight: bold;
+  font-size: 15vw;
+  letter-spacing: 0.25em;
+  color: $yellow;
+
+  width: 100%;
+  left: 2.2%;
+  position: relative;
+
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    left: 4vw;
+  }
+}
+
+.stereo-top {
+  font-family: BigJohnBold;
+  font-weight: bold;
+  font-size: 15vw;
+  letter-spacing: 0.25em;
+  color: $light;
+
+  left: 0;
+  width: 100%;
+  position: absolute;
+
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    left: -1vw;
+  }
+}
+
+.by {
+  font-family: BigJohnNorm;
+  font-weight: normal;
+  font-size: 15vw;
+  letter-spacing: 0.25em;
+  color: $light;
+
+  margin-top: -7vw;
+  margin-bottom: -7vw;
+  width: 100%;
+  left: 1%;
+  position: relative;
+}
+
+.zampa-bot {
+  font-family: BigJohnBold;
+  font-weight: bold;
+  font-size: 15vw;
+  letter-spacing: 0.25em;
+  color: $yellow;
+
+  width: 100%;
+  left: 2.5%;
+  position: relative;
+
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    left: 4.5vw;
+  }
+}
+
+.zampa-top {
+  font-family: BigJohnBold;
+  font-weight: bold;
+  font-size: 15vw;
+  letter-spacing: 0.25em;
+  color: $light;
+
+  width: 100%;
+  left: 0;
+  position: absolute;
+
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    left: -1vw;
+  }
+}
