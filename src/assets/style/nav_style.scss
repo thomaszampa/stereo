@@ -35,3 +35,45 @@ $light: #fffdf2;
     width: 45px;
   }
 }
+
+.menu-container {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+
+  overflow-x: hidden;
+  z-index: 1;
+
+  transition: 0.5s;
+
+  background-color: $blue;
+}
+
+.nav {
+}
+
+.nav-item {
+  margin: 10px;
+}
+
+.nav-link {
+  font-size: 38px;
+  padding: 10px;
+  display: block;
+  color: $light;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
