@@ -11,10 +11,15 @@
     <transition name="fade">
       <div class="menu" v-if="navOpen">
         <div class="menu-container">
-          <a id="button" href="#" @click="openNav"> CLOSE BUTTON</a>
+          <a id="button" href="#" class="closeBtn" @click="openNav">
+            <i>CLOSE</i>
+          </a>
           <div class="nav">
             <div class="nav-item">
-              <a class="nav-link" href="#">LINK</a>
+              <a class="nav-link-1" href="#">LINK</a>
+              <a class="nav-link-2" href="#">LINK</a>
+              <a class="nav-link-3" href="#">LINK</a>
+              <a class="nav-link-4" href="#">LINK</a>
             </div>
           </div>
         </div>
