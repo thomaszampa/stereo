@@ -1,6 +1,6 @@
 $dark: #070707;
 $blue: #061d33;
-$yellow: #e8c23a;
+$yellow: #f4c724;
 $beige: #f2edc9;
 $light: #fffdf2;
 
@@ -42,7 +42,7 @@ body {
   font-family: BigJohnBold;
   font-weight: bold;
   font-size: 15vw;
-  letter-spacing: 0.25em;
+  letter-spacing: 0.3em;
   color: $yellow;
 
   width: 100%;
@@ -60,7 +60,7 @@ body {
   font-family: BigJohnBold;
   font-weight: bold;
   font-size: 15vw;
-  letter-spacing: 0.25em;
+  letter-spacing: 0.3em;
   color: $light;
 
   left: 0;
@@ -92,7 +92,7 @@ body {
   font-family: BigJohnBold;
   font-weight: bold;
   font-size: 15vw;
-  letter-spacing: 0.25em;
+  letter-spacing: 0.19em;
   color: $yellow;
 
   width: 100%;
@@ -110,7 +110,7 @@ body {
   font-family: BigJohnBold;
   font-weight: bold;
   font-size: 15vw;
-  letter-spacing: 0.25em;
+  letter-spacing: 0.19em;
   color: $light;
 
   width: 100%;
@@ -122,4 +122,50 @@ body {
   &:hover {
     left: -1vw;
   }
+}
+
+.arrow-container {
+}
+
+.line-1 {
+  position: absolute;
+  top: 3.8vw;
+  left: -17vw;
+
+  width: 49vw;
+  height: 0.35vw;
+
+  background-color: $light;
+}
+
+.line-2 {
+  position: absolute;
+  top: 3.8vw;
+  right: 18vw;
+
+  width: 0.35vw;
+  height: 4vw;
+
+  background-color: $light;
+}
+
+.triangle {
+  position: absolute;
+  top: 7.8vw;
+  right: 17.4vw;
+
+  width: 0;
+  height: 0;
+  border-left: 0.8vw solid transparent;
+  border-right: 0.8vw solid transparent;
+  border-top: 1.6vw solid $light;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
 }

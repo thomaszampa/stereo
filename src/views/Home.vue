@@ -15,8 +15,18 @@
       <!-- BY -->
       <b-row>
         <b-col>
-          <div class="by">BY</div>
+          <div class="by" @mouseenter="toggleArrow">BY</div>
         </b-col>
+        <!-- ARROW -->
+        <transition name="fade">
+          <b-col class="arrow-container" v-if="showArrow">
+            <div>
+              <div class="line-1">1</div>
+              <div class="line-2"></div>
+              <div class="triangle"></div>
+            </div>
+          </b-col>
+        </transition>
       </b-row>
       <!-- ZAMPA -->
       <b-row>
@@ -33,7 +43,13 @@
 
     <!-- PLAYER -->
     <b-container>
-      <b-row></b-row>
+      <b-row>
+        <b-col>
+          <div style="color: white">
+            PLAYER
+          </div>
+        </b-col>
+      </b-row>
     </b-container>
   </div>
 </template>
@@ -52,11 +68,15 @@ import "../assets/style/home_style.scss";
 export default {
   data: function() {
     return {
-      message: "Welcome to Vue.js!"
+      showArrow: false
     };
   },
   created: function() {},
-  methods: {},
+  methods: {
+    toggleArrow() {
+      this.showArrow = !this.showArrow;
+    }
+  },
   computed: {}
 };
 </script>
