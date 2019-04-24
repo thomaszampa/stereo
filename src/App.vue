@@ -28,6 +28,11 @@
         </div>
       </div>
     </transition>
+
+    <!-- FOOTER -->
+    <b-container fluid class="footer-container">
+      <a href="" class="footer-stereo" style="text-decoration: none">THOMAS ZAMPA</a>
+    </b-container>
   </div>
 </template>
 
