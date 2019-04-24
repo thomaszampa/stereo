@@ -47,6 +47,13 @@
         </b-col>
       </b-row>
     </b-container>
+
+    <!-- FOOTER -->
+    <b-container fluid class="footer-container">
+      <b-row>
+        <a href="" class="footer-stereo">STEREO</a>
+      </b-row>
+    </b-container>
   </div>
 </template>
 
