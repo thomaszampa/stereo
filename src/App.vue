@@ -2,7 +2,7 @@
   <div id="app">
     <router-view />
     <!-- NAV HAMBURGER -->
-    <div class="nav-container">
+    <div class="nav-container-A">
       <a href="#" class="hamburger" @click="openNav">
         <div></div>
         <div></div>
@@ -13,7 +13,7 @@
     <transition name="fade">
       <div class="menu" v-if="navOpen">
         <div class="menu-container">
-          <a id="button" href="#" class="closeBtn" @="openNav">
+          <a id="button" href="#" class="closeBtn" @click="openNav">
             <i>CLOSE</i>
           </a>
           <!-- NAV LINKS -->

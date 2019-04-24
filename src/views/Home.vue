@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <b-container fluid>
+    <b-container fluid class="text-container">
       <!-- STEREO -->
       <b-row>
         <b-col>
@@ -13,15 +13,15 @@
         </b-col>
       </b-row>
       <!-- BY -->
-      <b-row>
+      <b-row @mouseenter="enterArrow">
         <b-col>
-          <div class="by" @mouseenter="toggleArrow">BY</div>
+          <div class="by">BY</div>
         </b-col>
         <!-- ARROW -->
         <transition name="fade">
           <b-col class="arrow-container" v-if="showArrow">
             <div>
-              <div class="line-1">1</div>
+              <div class="line-1"></div>
               <div class="line-2"></div>
               <div class="triangle"></div>
             </div>
@@ -29,25 +29,21 @@
         </transition>
       </b-row>
       <!-- ZAMPA -->
-      <b-row>
-        <b-col>
-          <div class="zampa-bot">
+      <b-col>
+        <div class="zampa-bot">
+          ZAMPA
+          <span class="zampa-top">
             ZAMPA
-            <span class="zampa-top">
-              ZAMPA
-            </span>
-          </div>
-        </b-col>
-      </b-row>
+          </span>
+        </div>
+      </b-col>
     </b-container>
 
     <!-- PLAYER -->
-    <b-container>
+    <b-container fluid class="player-container">
       <b-row>
         <b-col>
-          <div style="color: white">
-            PLAYER
-          </div>
+          <div class="player"></div>
         </b-col>
       </b-row>
     </b-container>
@@ -73,8 +69,11 @@ export default {
   },
   created: function() {},
   methods: {
-    toggleArrow() {
-      this.showArrow = !this.showArrow;
+    enterArrow() {
+      this.showArrow = true;
+    },
+    exitArrow() {
+      this.showArrow = false;
     }
   },
   computed: {}

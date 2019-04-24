@@ -4,8 +4,21 @@ $yellow: #f4c724;
 $beige: #f2edc9;
 $light: #fffdf2;
 
-.nav-container {
-  position: absolute;
+.nav-container-A {
+  position: fixed;
+  width: 85px;
+  right: 0;
+  top: 0;
+
+  margin: 0;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+
+  background: $yellow;
+}
+
+.nav-container-B {
+  position: fixed;
   width: 85px;
   right: 0;
   top: 0;
