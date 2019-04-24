@@ -2,7 +2,7 @@
   <div id="app">
     <router-view />
     <!-- NAV HAMBURGER -->
-    <div class="nav-container-A">
+    <div class="ham-container-A">
       <a href="#" class="hamburger" @click="openNav">
         <div></div>
         <div></div>
@@ -11,21 +11,15 @@
     </div>
     <!-- FULL-SCREEN NAV WINDOW -->
     <transition name="fade">
-      <div class="menu" v-if="navOpen">
-        <div class="menu-container">
-          <a id="button" href="#" class="closeBtn" @click="openNav">
-            <i>CLOSE</i>
-          </a>
-          <!-- NAV LINKS -->
-          <div class="nav">
-            <div class="nav-item">
-              <a class="nav-link-1" href="#">LINK</a>
-              <a class="nav-link-2" href="#">LINK</a>
-              <a class="nav-link-3" href="#">LINK</a>
-              <a class="nav-link-4" href="#">LINK</a>
-            </div>
-          </div>
-        </div>
+      <div class="menu-container" v-if="navOpen">
+        <a id="button" href="#" class="closeBtn" @click="openNav" style="text-decoration: none">
+          CLOSE
+        </a>
+        <!-- NAV LINKS -->
+        <a href="" class="nav-link-1" style="text-decoration: none">LINK</a>
+        <a href="" class="nav-link-2" style="text-decoration: none">LINK</a>
+        <a href="" class="nav-link-3" style="text-decoration: none">LINK</a>
+        <a href="" class="nav-link-4" style="text-decoration: none">LINK</a>
       </div>
     </transition>
 
