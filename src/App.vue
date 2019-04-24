@@ -25,7 +25,10 @@
 
     <!-- FOOTER -->
     <b-container fluid class="footer-container">
-      <a href="" class="footer-stereo" style="text-decoration: none">THOMAS ZAMPA</a>
+      <a href="" class="footer-stereo" style="text-decoration: none">
+        <h1>THOMAS</h1>
+        <h1>ZAMPA</h1>
+      </a>
     </b-container>
   </div>
 </template>

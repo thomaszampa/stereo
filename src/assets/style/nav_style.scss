@@ -6,26 +6,26 @@ $light: #fffdf2;
 
 .ham-container-A {
   position: fixed;
-  width: 85px;
+  width: 5vw;
   right: 0;
   top: 0;
 
   margin: 0;
-  padding-top: 1vw;
-  padding-bottom: 1vw;
+  padding-top: 1.75vh;
+  padding-bottom: 1.75vh;
 
   background: $yellow;
 }
 
 .ham-container-B {
   position: fixed;
-  width: 85px;
+  width: 5vw;
   right: 0;
   top: 0;
 
   margin: 0;
-  padding-top: 1vw;
-  padding-bottom: 1vw;
+  padding-top: 1.75vh;
+  padding-bottom: 1.75vh;
 
   background: $yellow;
 }
@@ -35,11 +35,11 @@ $light: #fffdf2;
 }
 
 .hamburger div {
-  width: 35px;
-  height: 3.5px;
+  width: 2vw;
+  height: 0.35vh;
   background-color: $light;
   border-radius: 5px;
-  margin: 6px 0px;
+  margin: 0.75vh 0vw;
 
   position: relative;
   left: 50%;
@@ -73,7 +73,7 @@ $light: #fffdf2;
   transition: 0.5s;
 
   background-color: $dark;
-  opacity: 0.9;
+  opacity: 0.92;
 }
 
 .nav-link-1 {
