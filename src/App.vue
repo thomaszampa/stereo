@@ -3,7 +3,9 @@
     <router-view />
     <!-- NAV BAR -->
     <transition name="slide-in">
-      <div v-if="changeNavbar" class="nav-bar"></div>
+      <div v-if="changeNavbar" class="nav-bar">
+        <h1 class="nav-title">STEREO</h1>
+      </div>
     </transition>
     <!-- NAV HAMBURGER -->
     <div class="ham-container">
