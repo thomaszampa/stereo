@@ -2,7 +2,9 @@
   <div id="app">
     <router-view />
     <!-- NAV BAR -->
-    <div class="nav-container" :class="{ 'nav-container--hidden': changeNavbar }"></div>
+    <transition name="slide-in">
+      <div v-if="changeNavbar" class="nav-bar"></div>
+    </transition>
     <!-- NAV HAMBURGER -->
     <div class="ham-container">
       <a href="#" class="hamburger" @click="openNav">
