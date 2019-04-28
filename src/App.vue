@@ -10,9 +10,10 @@
     <!-- NAV HAMBURGER -->
     <div class="ham-container">
       <a href="#" class="hamburger" @click="openNav">
-        <div></div>
-        <div></div>
-        <div></div>
+        <div class="ham-top"></div>
+        <div class="ham-mid-1"></div>
+        <div class="ham-mid-2" style="top: -1.1vh"></div>
+        <div class="ham-bot" style="top: -1.2vh"></div>
       </a>
     </div>
     <!-- FULL-SCREEN NAV WINDOW -->

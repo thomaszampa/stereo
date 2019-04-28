@@ -7,7 +7,7 @@ $light: #fffdf2;
 .nav-bar {
   position: fixed;
   width: 100vw;
-  height: 7.52vh;
+  height: 7.35vh;
   left: 0;
   top: 0;
   z-index: 1;
@@ -53,7 +53,7 @@ $light: #fffdf2;
 
   margin: 0;
   padding-top: 1.75vh;
-  padding-bottom: 1.75vh;
+  padding-bottom: 0.5vh;
 
   background: $yellow;
 }
@@ -75,12 +75,44 @@ $light: #fffdf2;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 
+  transition: 0.5s;
+}
+
+.hamburger:hover .ham-top {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  &:hover {
-    width: 45px;
-    background-color: $dark;
-  }
+
+  width: 15px;
+  background-color: $dark;
+  transform: translate(-8px, -10px);
+}
+
+.hamburger:hover .ham-mid-1 {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+
+  width: 15px;
+  background-color: $dark;
+  transform: translateX(-38px);
+}
+
+.hamburger:hover .ham-mid-2 {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+
+  width: 15px;
+  background-color: $dark;
+  opacity: 1;
+  transform: translateX(24px);
+}
+
+.hamburger:hover .ham-bot {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+
+  width: 15px;
+  background-color: $dark;
+  transform: translate(-8px, 10px);
 }
 
 .menu-container {
