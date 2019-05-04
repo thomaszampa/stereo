@@ -53,8 +53,8 @@ body {
   left: 2.2%;
   position: relative;
 
-  -webkit-transition: all 0.75s ease-in-out;
-  transition: all 0.75s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   &:hover {
     left: 4vw;
   }
@@ -71,8 +71,8 @@ body {
   width: 100%;
   position: absolute;
 
-  -webkit-transition: all 0.75s ease-in-out;
-  transition: all 0.75s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   &:hover {
     left: -1vw;
   }
@@ -91,8 +91,8 @@ body {
   left: 1.2vw;
   position: relative;
 
-  // -webkit-transition: all 0.75s ease-in-out;
-  // transition: all 0.75s ease-in-out;
+  // -webkit-transition: all 0.5s ease-in-out;
+  // transition: all 0.5s ease-in-out;
   // &:hover {
   //   color: $yellow;
   // }
@@ -109,8 +109,8 @@ body {
   left: 2.7%;
   position: absolute;
 
-  -webkit-transition: all 0.75s ease-in-out;
-  transition: all 0.75s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   &:hover {
     left: 4.5vw;
   }
@@ -127,8 +127,8 @@ body {
   left: 0;
   position: absolute;
 
-  -webkit-transition: all 0.75s ease-in-out;
-  transition: all 0.75s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   &:hover {
     left: -1vw;
   }
@@ -178,7 +178,7 @@ body {
 
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 0.75s;
+  transition: opacity 0.5s;
 }
 .fade-enter,
 .fade-leave-to {

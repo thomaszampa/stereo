@@ -53,7 +53,7 @@ $light: #fffdf2;
 
   margin: 0;
   padding-top: 1.75vh;
-  padding-bottom: 0.5vh;
+  padding-bottom: 1.6vh;
 
   background: $yellow;
 }
@@ -78,41 +78,20 @@ $light: #fffdf2;
   transition: 0.5s;
 }
 
-.hamburger:hover .ham-top {
+.hamburger:hover div {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 
-  width: 15px;
+  width: 45px;
   background-color: $dark;
-  transform: translate(-8px, -10px);
 }
 
-.hamburger:hover .ham-mid-1 {
+.hamburger:hover .ham-mid {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 
-  width: 15px;
+  width: 25px;
   background-color: $dark;
-  transform: translateX(-38px);
-}
-
-.hamburger:hover .ham-mid-2 {
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-
-  width: 15px;
-  background-color: $dark;
-  opacity: 1;
-  transform: translateX(24px);
-}
-
-.hamburger:hover .ham-bot {
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-
-  width: 15px;
-  background-color: $dark;
-  transform: translate(-8px, 10px);
 }
 
 .menu-container {
