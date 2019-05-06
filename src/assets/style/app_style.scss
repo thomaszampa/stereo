@@ -188,19 +188,21 @@ $light: #fffdf2;
   position: absolute;
   width: 100%;
   height: 25vh;
+  max-height: 300px;
+  min-height: 100px;
 
   text-align: center;
 }
 
-.footer-stereo {
+.footer-TZ {
   position: relative;
   top: 1vh;
 
   font-family: BigJohnBold;
   font-weight: normal;
   color: $light;
-  font-size: 1em;
-  letter-spacing: 0.25em;
+  font-size: 0.25vh;
+  letter-spacing: 0.25vw;
 
   -webkit-transition: all 0.75s ease-in-out;
   transition: all 0.75s ease-in-out;

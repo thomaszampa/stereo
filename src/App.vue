@@ -31,7 +31,7 @@
 
     <!-- FOOTER -->
     <b-container fluid class="footer-container">
-      <a href="" class="footer-stereo" style="text-decoration: none">
+      <a href="" class="footer-TZ" style="text-decoration: none">
         <h1>THOMAS ZAMPA</h1>
       </a>
     </b-container>
