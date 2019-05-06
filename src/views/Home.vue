@@ -46,6 +46,14 @@
           <div class="player"></div>
         </b-col>
       </b-row>
+      <!-- Controls -->
+      <b-row>
+        <b-col>
+          <div class="controls">
+            <div class="play"></div>
+          </div>
+        </b-col>
+      </b-row>
     </b-container>
   </div>
 </template>
