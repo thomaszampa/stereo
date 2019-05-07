@@ -152,7 +152,7 @@ body {
   right: 16.67vw;
 
   width: 0.15vw;
-  height: 50vw;
+  height: 15vw;
 
   background-color: $light;
 }
@@ -160,14 +160,14 @@ body {
 .triangle {
   position: absolute;
   z-index: 1;
-  top: 54vw;
-  right: 16.26vw;
+  top: 19vw;
+  right: 15.75vw;
 
   width: 0;
   height: 0;
-  border-left: 0.5vw solid transparent;
-  border-right: 0.5vw solid transparent;
-  border-top: 1vw solid $light;
+  border-left: 1vw solid transparent;
+  border-right: 1vw solid transparent;
+  border-top: 2vw solid $light;
 }
 
 .fade-enter-active,
@@ -180,9 +180,8 @@ body {
 }
 
 .player-container {
-  position: relative;
   width: 100%;
-  height: 75vw;
+  height: 150vh;
   min-height: 800px;
 
   background-color: $beige;
@@ -191,14 +190,15 @@ body {
 .player {
   position: relative;
   margin: auto;
-  width: 65vw;
-  min-width: 375px;
-  height: 75vh;
-  top: 25%;
-  overflow: hidden;
+  z-index: 2;
 
-  background: $dark;
-  opacity: 0.05;
+  top: 15%;
+
+  width: 55vw;
+  min-width: 375px;
+  height: 65vh;
+
+  background-color: rgba(7, 7, 7, 0.1);
   border-radius: 5px;
 
   -webkit-transition: all 0.5s ease-in-out;
@@ -207,24 +207,26 @@ body {
   }
 }
 
-.play {
+.progress-bar {
+  position: relative;
+  margin: 1.5vw;
+  top: 71.5%;
+
+  height: 25%;
+
+  background-color: rgba(7, 7, 7, 0.05);
+  border-radius: 5px;
+}
+
+.color-block {
   position: relative;
   margin: auto;
-  top: 23vh;
+  z-index: 1;
 
-  width: 0;
-  height: 0;
+  top: 1.75vh;
 
-  border-left: 5vw solid $dark;
-  border-bottom: 2.5vw solid transparent;
-  border-top: 2.5vw solid transparent;
-  opacity: 0.75;
+  width: 85%;
+  height: 25%;
 
-  transform: skewX(-5deg);
-
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  &:hover {
-    opacity: 1;
-  }
+  background-color: $yellow;
 }

@@ -41,19 +41,16 @@
 
     <!-- PLAYER -->
     <b-container fluid class="player-container">
-      <b-row>
-        <b-col>
-          <div class="player"></div>
-        </b-col>
-      </b-row>
+      <div class="player">
+        <div class="heart"></div>
+        <div class="progress-bar"></div>
+      </div>
+      <!-- COLOR BLOCK -->
+      <div fluid class="color-block"></div>
       <!-- Controls -->
-      <b-row>
-        <b-col>
-          <div class="controls">
-            <div class="play"></div>
-          </div>
-        </b-col>
-      </b-row>
+      <div class="controls">
+        <div class="play"></div>
+      </div>
     </b-container>
   </div>
 </template>
