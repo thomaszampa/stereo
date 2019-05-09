@@ -48,11 +48,12 @@
       <!-- COLOR BLOCK -->
       <div fluid class="color-block">
         <div class="controls">
-          <font-awesome-icon class="step-backward" icon="step-backward" size="5x" />
-          <font-awesome-icon class="backward" icon="backward" size="5x" />
-          <font-awesome-icon class="play" icon="play" size="5x" />
-          <font-awesome-icon class="forward" icon="forward" size="5x" />
-          <font-awesome-icon class="step-forward" icon="step-forward" size="5x" />
+          <font-awesome-icon class="volume" icon="volume-up" size="2x" />
+          <font-awesome-icon class="step-backward" icon="step-backward" size="2x" />
+          <font-awesome-icon class="backward" icon="backward" size="3x" />
+          <font-awesome-icon class="play" icon="play" size="3x" />
+          <font-awesome-icon class="forward" icon="forward" size="3x" />
+          <font-awesome-icon class="step-forward" icon="step-forward" size="2x" />
         </div>
       </div>
       <!-- Controls -->

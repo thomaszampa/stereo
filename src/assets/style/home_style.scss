@@ -180,6 +180,9 @@ body {
 }
 
 .player-container {
+  position: relative;
+  text-align: center;
+
   width: 100%;
   height: 150vh;
   min-height: 800px;
@@ -200,11 +203,6 @@ body {
 
   background-color: rgba(7, 7, 7, 0.1);
   border-radius: 5px;
-
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  &:hover {
-  }
 }
 
 .progress-bar {
@@ -233,20 +231,57 @@ body {
 
 .play,
 .backward,
-.forward,
-.step-backward,
-.step-forward {
+.forward {
   position: relative;
   margin: 2vw;
-  top: 22vh;
-  left: 24%;
+  top: 23vh;
 
   color: rgba(7, 7, 7, 0.55);
 
   transform: skew(-5deg);
 
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  &:hover {
+    transform: scale(1.05) skewX(-5deg);
+    color: $dark;
+  }
+}
+.step-backward,
+.step-forward {
+  position: relative;
+  margin-top: 2vw;
+  margin-bottom: 2.5vw;
+  margin-left: 6vw;
+  margin-right: 6vw;
+  top: 23vh;
+
+  color: rgba(7, 7, 7, 0.55);
+
+  transform: skew(-5deg);
+
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  &:hover {
+    transform: scale(1.05) skewX(-5deg);
+    color: $dark;
+  }
+}
+
+.volume {
+  position: relative;
+  margin-top: 2vw;
+  margin-bottom: 2.5vw;
+  margin-left: 6vw;
+  margin-right: 6vw;
+  top: 23vh;
+
+  color: rgba(7, 7, 7, 0.55);
+
+  transform: skew(-5deg);
+
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
   &:hover {
     transform: scale(1.05) skewX(-5deg);
     color: $dark;
