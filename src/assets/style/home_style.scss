@@ -140,7 +140,7 @@ body {
   left: 33%;
 
   width: 50.3vw;
-  height: 0.15vw;
+  height: 0.25vw;
 
   background-color: $light;
 }
@@ -151,7 +151,7 @@ body {
   top: 4vw;
   right: 16.67vw;
 
-  width: 0.15vw;
+  width: 0.25vw;
   height: 15vw;
 
   background-color: $light;
@@ -161,7 +161,7 @@ body {
   position: absolute;
   z-index: 1;
   top: 19vw;
-  right: 15.75vw;
+  right: 15.8vw;
 
   width: 0;
   height: 0;
@@ -229,4 +229,26 @@ body {
   height: 25%;
 
   background-color: $yellow;
+}
+
+.play,
+.backward,
+.forward,
+.step-backward,
+.step-forward {
+  position: relative;
+  margin: 2vw;
+  top: 22vh;
+  left: 24%;
+
+  color: rgba(7, 7, 7, 0.55);
+
+  transform: skew(-5deg);
+
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    transform: scale(1.05) skewX(-5deg);
+    color: $dark;
+  }
 }

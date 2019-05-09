@@ -46,11 +46,16 @@
         <div class="progress-bar"></div>
       </div>
       <!-- COLOR BLOCK -->
-      <div fluid class="color-block"></div>
-      <!-- Controls -->
-      <div class="controls">
-        <div class="play"></div>
+      <div fluid class="color-block">
+        <div class="controls">
+          <font-awesome-icon class="step-backward" icon="step-backward" size="5x" />
+          <font-awesome-icon class="backward" icon="backward" size="5x" />
+          <font-awesome-icon class="play" icon="play" size="5x" />
+          <font-awesome-icon class="forward" icon="forward" size="5x" />
+          <font-awesome-icon class="step-forward" icon="step-forward" size="5x" />
+        </div>
       </div>
+      <!-- Controls -->
     </b-container>
   </div>
 </template>
