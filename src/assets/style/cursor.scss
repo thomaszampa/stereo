@@ -5,7 +5,8 @@ body {
 
 .cursor {
     position: absolute;
-    z-index: 9999;
+    // z-index: 9999;
+    // cursor: none;
 
     width: 75px;
     height: 75px;
@@ -13,5 +14,20 @@ body {
     border: 2px solid white;
     border-radius: 50%;
 
-    cursor: none;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+}
+
+.cursor_inner {
+    position: absolute;
+
+    width: 25px;
+    height: 25px;
+
+    border: 10px solid white;
+    border-radius: 50%;
+    opacity: 0.2;
+
+    transition-duration: 250ms;
+    transition-timing-function: ease-out;
 }

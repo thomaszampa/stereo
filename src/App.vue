@@ -30,7 +30,8 @@
     </transition>
 
     <!-- CURSOR -->
-    <div class="cursor" id="cursor"></div>
+    <div class="cursor"></div>
+    <div class="cursor_inner"></div>
 
     <!-- FOOTER -->
     <b-container fluid class="footer-container">
@@ -75,9 +76,12 @@ export default {
 
     // Listen to Cursor Position & Follow
     const cursor = document.querySelector(".cursor");
+    const cursor_inner = document.querySelector(".cursor_inner");
 
     document.addEventListener("mousemove", e => {
       cursor.setAttribute("style", "top: " + (e.pageY - 37.5) + "px; left: " + (e.pageX - 37.5) + "px;");
+
+      cursor_inner.setAttribute("style", "top: " + (e.pageY - 12.5) + "px; left: " + (e.pageX - 12.5) + "px;");
     });
   },
   destroy() {
