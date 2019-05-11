@@ -41,21 +41,7 @@
 
     <!-- PLAYER -->
     <b-container fluid class="player-container">
-      <div class="player">
-        <div class="heart"></div>
-        <div class="progress-bar"></div>
-      </div>
-      <!-- COLOR BLOCK -->
-      <div fluid class="color-block">
-        <div class="controls">
-          <font-awesome-icon class="volume" icon="volume-up" size="2x" />
-          <font-awesome-icon class="step-backward" icon="step-backward" size="2x" />
-          <font-awesome-icon class="backward" icon="backward" size="3x" />
-          <font-awesome-icon class="play" icon="play" size="3x" />
-          <font-awesome-icon class="forward" icon="forward" size="3x" />
-          <font-awesome-icon class="step-forward" icon="step-forward" size="2x" />
-        </div>
-      </div>
+      <div class="player"></div>
       <!-- Controls -->
     </b-container>
   </div>

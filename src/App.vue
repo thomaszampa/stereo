@@ -29,6 +29,9 @@
       </div>
     </transition>
 
+    <!-- CURSOR -->
+    <div class="cursor" id="cursor"></div>
+
     <!-- FOOTER -->
     <b-container fluid class="footer-container">
       <a href="" class="footer-TZ" style="text-decoration: none">
@@ -39,6 +42,7 @@
 </template>
 
 <script>
+import "./assets/style/cursor.scss";
 import "./assets/style/app_style.scss";
 
 export default {
@@ -66,7 +70,15 @@ export default {
     }
   },
   mounted() {
+    // Listen To Scroll
     window.addEventListener("scroll", this.onScroll);
+
+    // Listen to Cursor Position & Follow
+    const cursor = document.querySelector(".cursor");
+
+    document.addEventListener("mousemove", e => {
+      cursor.setAttribute("style", "top: " + (e.pageY - 37.5) + "px; left: " + (e.pageX - 37.5) + "px;");
+    });
   },
   destroy() {
     window.removeEventLsitener("scroll", this.onScroll);

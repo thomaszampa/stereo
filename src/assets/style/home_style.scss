@@ -184,7 +184,7 @@ body {
   text-align: center;
 
   width: 100%;
-  height: 150vh;
+  height: 125vh;
   min-height: 800px;
 
   background-color: $beige;
@@ -195,38 +195,13 @@ body {
   margin: auto;
   z-index: 2;
 
-  top: 15%;
+  left: 0;
 
-  width: 55vw;
+  width: 50%;
   min-width: 375px;
-  height: 65vh;
+  height: 100%;
 
   background-color: rgba(7, 7, 7, 0.1);
-  border-radius: 5px;
-}
-
-.progress-bar {
-  position: relative;
-  margin: 1.5vw;
-  top: 71.5%;
-
-  height: 25%;
-
-  background-color: rgba(7, 7, 7, 0.05);
-  border-radius: 5px;
-}
-
-.color-block {
-  position: relative;
-  margin: auto;
-  z-index: 1;
-
-  top: 1.75vh;
-
-  width: 85%;
-  height: 25%;
-
-  background-color: $yellow;
 }
 
 .play,
